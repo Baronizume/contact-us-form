@@ -1,0 +1,265 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+/* Header */
+
+.university-header {
+  background: #173f6b;
+  color: white;
+  padding: 22px 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.university-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: white;
+  color: #173f6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.university-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.university-header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Main */
+
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  width: 600px;
+  max-width: 92%;
+  margin: 45px auto;
+}
+
+/* Form */
+
+form {
+  background: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #e8f1ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.form-header h2 {
+  margin: 0;
+  color: #173f6b;
+  font-size: 30px;
+}
+
+.form-header p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+/* Inputs */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #374151;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111827;
+  outline: none;
+  transition: 0.2s;
+}
+
+input {
+  height: 46px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Button */
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button span {
+  margin-left: 5px;
+}
+
+/* Success message */
+
+.success {
+  margin-top: 30px;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #16a34a;
+}
+
+.success-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.success h2 {
+  text-align: center;
+  color: #15803d;
+  margin: 0;
+}
+
+.success-text {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.submitted-info {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.submitted-info p {
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.submitted-info p:last-child {
+  border-bottom: none;
+}
+
+.submitted-info strong {
+  display: block;
+  color: #173f6b;
+  margin-bottom: 4px;
+}
+
+.submitted-info span {
+  color: #4b5563;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .university-header {
+    padding: 18px 20px;
+  }
+
+  .university-header h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: 25px auto;
+  }
+
+  form {
+    padding: 25px 20px;
+  }
+
+  .form-header h2 {
+    font-size: 26px;
+  }
+}
+
